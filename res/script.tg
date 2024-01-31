@@ -1,0 +1,127 @@
+# Textgimp script
+
+# load elephant.jpg and call it 'elephant'
+load elephant.jpg elephant
+
+# save elephant as elephant.ppm
+# save elephant.ppm elephant
+
+# save elephant as elephant.bmp
+# save elephant.bmp elephant
+
+# save elephant as elephant.jpg
+# save elephant.jpg elephant
+
+# brighten elephant by 70 units
+brighten 70 elephant elephant-brighter
+
+# save elephant-brighter as elephant-brighter.jpg
+save elephant-brighter.jpg elephant-brighter
+
+# darken elephant by 70 units
+brighten -70 elephant elephant-darker
+
+# save elephant-darker as elephant-darker.jpg
+save elephant-darker.jpg elephant-darker
+
+# flip elephant horizontally
+horizontal-flip elephant elephant-horizontal
+
+# save elephant-horizontal as elephant-horizontal.jpg
+save elephant-horizontal.jpg elephant-horizontal
+
+# flip horizontal elephant vertically
+vertical-flip elephant-horizontal elephant-horizontal-vertical
+
+# save elephant-vertical as elephant-vertical.jpg
+save elephant-horizontal-vertical.jpg elephant-horizontal-vertical
+
+# rgb split elephants into red, green and blue components
+rgb-split elephant elephant-red elephant-green elephant-blue
+
+# brighten the blue component of elephant
+brighten 70 elephant-blue elephant-blue-brighter
+
+# rgb combine the brightened blue component with the red and green components
+rgb-combine elephant-blue-tint elephant-red elephant-green elephant-blue-brighter
+
+# save elephant-blue-tint as elephant-blue-tint.jpg
+save elephant-blue-tint.jpg elephant-blue-tint
+
+# rgb-combine flipped version of elephants
+rgb-combine elephant-combine elephant elephant-horizontal elephant-horizontal-vertical
+
+# save elephant-combine as elephant-combine.jpg
+save elephant-combine.jpg elephant-combine
+
+# rgb-split elephant-combine into red, green and blue components
+rgb-split elephant-combine elephant-combine-red elephant-combine-green elephant-combine-blue
+
+# save all components of elephant-combine
+save elephant-combine-red.jpg elephant-combine-red
+save elephant-combine-green.jpg elephant-combine-green
+save elephant-combine-blue.jpg elephant-combine-blue
+
+# greyscale combined elephant using red component
+greyscale red-component elephant-combine elephant-combine-red-greyscale
+
+# save greyscale combined elephant
+save elephant-combine-red-greyscale.jpg elephant-combine-red-greyscale
+
+# greyscale combined elephant using green component
+greyscale green-component elephant-combine elephant-combine-green-greyscale
+
+# save greyscale combined elephant
+save elephant-combine-green-greyscale.jpg elephant-combine-green-greyscale
+
+# greyscale combined elephant using blue component
+greyscale blue-component elephant-combine elephant-combine-blue-greyscale
+
+# save greyscale combined elephant
+save elephant-combine-blue-greyscale.jpg elephant-combine-blue-greyscale
+
+# greyscale combined elephant using value component
+greyscale value-component elephant-combine elephant-combine-value-greyscale
+
+# save greyscale combined elephant
+save elephant-combine-value-greyscale.jpg elephant-combine-value-greyscale
+
+# greyscale combined elephant using luma component
+greyscale luma-component elephant-combine elephant-combine-luma-greyscale
+
+# save greyscale combined elephant
+save elephant-combine-luma-greyscale.jpg elephant-combine-luma-greyscale
+
+# greyscale combined elephant using intensity component
+greyscale intensity-component elephant-combine elephant-combine-intensity-greyscale
+
+# save greyscale combined elephant
+save elephant-combine-intensity-greyscale.jpg elephant-combine-intensity-greyscale
+
+# sepia combined elephant
+sepia elephant-combine combine-sepia
+
+# save sepia image
+save combine-sepia.jpg combine-sepia
+
+# blur the original elephant
+blur elephant elephant-blur
+
+# save the blurred image
+save elephant-blur.jpg elephant-blur
+
+# sharpen the original elephant
+sharpen elephant elephant-sharpen
+
+# save the sharpened image
+save elephant-sharpen.jpg elephant-sharpen
+
+# dither the sharpened image
+dither elephant-sharpen elephant-sharp-dither
+
+# save the dithered image
+save elephant-sharp-dither.jpg elephant-sharp-dither
+
+
+# quit
+q

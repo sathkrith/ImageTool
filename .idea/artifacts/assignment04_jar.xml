@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="assignment04:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/assignment04_jar</output-path>
+    <root id="archive" name="assignment04.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="assignment04" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dependencies/jcommon-1.0.23.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/dependencies/jfreechart-1.0.19.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
